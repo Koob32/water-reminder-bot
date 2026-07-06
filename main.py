@@ -49,8 +49,7 @@ async def water_reminder():
 
         now = datetime.now()
 
-        if now.hour >= 23 or now.hour < 15:
-            # Ночь, ничего не делаем
+        if now.hour >= 23 or now.hour < 8:
             continue
 
         if user_id and reminders_enabled:
