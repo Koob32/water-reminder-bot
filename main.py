@@ -3,7 +3,8 @@ import os
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
-from config import TOKEN
+import os
+TOKEN = os.getenv("TOKEN")
 from datetime import datetime
 
 
