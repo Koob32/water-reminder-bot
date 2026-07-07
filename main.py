@@ -46,7 +46,7 @@ async def start(message: Message):
     )
 async def water_reminder():
     while True:
-        await asyncio.sleep(10)
+        await asyncio.sleep(7200)
 
         now = datetime.now()
 
